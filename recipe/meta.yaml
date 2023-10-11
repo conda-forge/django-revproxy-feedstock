@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -24,7 +24,7 @@ requirements:
     - urllib3 >=1.12
   run_constrained:
     - diazo >=1.0.5
-    - lxml >=3.4,<3.5
+    - lxml >=3.4
 
 test:
   imports:
