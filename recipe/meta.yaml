@@ -1,5 +1,5 @@
 {% set name = "django-revproxy" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/jazzband/django-revproxy/archive/{{ version }}.tar.gz
-  sha256: 2a568e5b18f522c07bcc34c4ee05a41a63fdbfdca014284ab8a56bee102f47e6
+  sha256: ee46be39a822c34d2db03762e3004b3fc08dc0a7bac2435584032d26b12a25e0
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
