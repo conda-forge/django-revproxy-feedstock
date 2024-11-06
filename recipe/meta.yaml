@@ -17,13 +17,13 @@ build:
 
 requirements:
   host:
-    - python {{ python_min })
+    - python {{ python_min }}
     - setuptools >=45
     - wheel
     - setuptools-scm >=6.2
     - pip
   run:
-    - python >={{ python_min })
+    - python >={{ python_min }}
     - django >=3.0
     - urllib3 >=1.12
   run_constrained:
